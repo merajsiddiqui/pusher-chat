@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Pusher Chat</title>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="//js.pusher.com/3.0/pusher.min.js"></script>
+
+<!-- Downloaded in step 1 -->
+<script src="PusherChatWidget.js"></script>
+<link href="pusher-chat.css" rel="stylesheet" />
+</body>
+
+
+
+
+
+<script type="text/javascript">
+	$(function() {     
+  var pusher = new Pusher('36b41c36d2fb8ae2fe31');
+  var chatWidget = new PusherChatWidget(pusher, {
+    chatEndPoint: 'php/chat.php'
+  });
+});
+</script>
+</html>
